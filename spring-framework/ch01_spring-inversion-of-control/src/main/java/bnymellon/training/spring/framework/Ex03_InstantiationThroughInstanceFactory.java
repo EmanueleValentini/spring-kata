@@ -37,11 +37,10 @@ public class Ex03_InstantiationThroughInstanceFactory {
     public static void main(String args[]) {
 
         // XML based config loading
-        ApplicationContext context =
-                new ClassPathXmlApplicationContext(
+        ApplicationContext context = new ClassPathXmlApplicationContext(
                         "ex03-instantiation-through-instance-factory.xml");
 
-        ColoredShape coloredShapeBean = (ColoredShape) context.getBean("coloredShapeBean");
+        ColoredShape coloredShapeBean = context.getBean("coloredShapeBean", ColoredShape.class);
 
         System.out.println(coloredShapeBean.toString());
     }

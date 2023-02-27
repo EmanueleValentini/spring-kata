@@ -38,7 +38,7 @@ public class Ex02_InstantiationThroughStaticFactory {
                 new ClassPathXmlApplicationContext(
                         "ex02-instantiation-through-static-factory.xml");
 
-        ColoredShape coloredShapeBean = (ColoredShape) context.getBean("coloredShapeBean");
+        ColoredShape coloredShapeBean = context.getBean("coloredShapeBean",ColoredShape.class);
 
         System.out.println(coloredShapeBean.toString());
     }
