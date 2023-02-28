@@ -16,7 +16,11 @@
 
 package bnymellon.training.spring.framework.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 // TODO: Fix this class to Autowire using a setter
+@Component
 public class BulkVehicleOrder {
 
     private Vehicle vehicle;
@@ -37,6 +41,7 @@ public class BulkVehicleOrder {
     public Vehicle getVehicle() {
         return vehicle;
     }
+
 
     public void setVehicle(final Vehicle vehicle) {
         this.vehicle = vehicle;
