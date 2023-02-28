@@ -33,7 +33,7 @@ public interface ColoredShapeDao {
     ColoredShape getColoredShape(int id);
 
     /**
-     * R of the CRUD Read all ColoredShape instnces in the table
+     * R of the CRUD Read all ColoredShape instances in the table
      */
     List<ColoredShape> listColoredShapes();
 
